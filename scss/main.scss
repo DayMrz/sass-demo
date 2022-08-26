@@ -1,3 +1,24 @@
-body {
-  background-color: rgb(230, 217, 217);
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav {
+  background-color: $color-primary;
+}
+
+.banner h1 {
+  $color-secondary: red;  // !global try to avoid this Day, pls!
+  color: $color-secondary;
+  font-size: $font-lg;
+  text-align: center;
+}
+
+.footer h3 {
+  color: $color-secondary;
+  font-size: $font-md;
+  text-align: center;
 }
