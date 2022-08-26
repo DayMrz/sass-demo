@@ -8,13 +8,25 @@ $font-sm: 20px;
 
 .nav {
   background-color: $color-primary;
+  ul li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    font-size: $font-sm;
+    color: $color-tertiary;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
 }
 
 .banner h1 {
-  $color-secondary: red;  // !global try to avoid this Day, pls!
   color: $color-secondary;
   font-size: $font-lg;
   text-align: center;
+  // $color-secondary: red;  // !global = try to avoid this Day, pls!
 }
 
 .footer h3 {

@@ -1,8 +1,16 @@
 .nav {
   background-color: orange; }
+  .nav ul li {
+    list-style: none; }
+  .nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: royalblue; }
+    .nav a:hover {
+      color: gray; }
 
 .banner h1 {
-  color: red;
+  color: gray;
   font-size: 40px;
   text-align: center; }
 
