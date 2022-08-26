@@ -51,3 +51,7 @@ h1 {
   @extend h1;
   font-size: fontSize();
 }
+
+
+Check more functions
+//https://sass-lang.com/documentation/Sass/Script/Functions.html

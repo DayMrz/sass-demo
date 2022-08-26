@@ -1,20 +1,26 @@
 .nav {
-  background-color: orange; }
+  background-color: #ffc966; }
   .nav ul li {
     list-style: none; }
   .nav a {
     text-decoration: none;
     font-size: 20px;
-    color: royalblue; }
+    color: #4d4d00; }
     .nav a:hover {
       color: gray; }
 
-.heading, .banner h1, .footer h3 {
-  color: orange;
+.heading, h1, .footer h3 {
+  color: rgba(255, 165, 0, 0.7);
   font-size: 40px;
-  background-color: gray;
+  background-color: #676767;
   text-align: center; }
 
-.banner h1:hover {
+h1:hover, .footer h3:hover {
   background-color: orange;
   color: gray; }
+
+.banner p {
+  font-size: 40px; }
+
+.footer h3 {
+  font-size: 24px; }
