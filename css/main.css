@@ -1,3 +1,7 @@
+.footer h3 {
+  font-style: italic;
+  border: 3px solid #e05252; }
+
 .nav {
   background-color: #ffc966; }
   .nav ul li {
