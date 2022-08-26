@@ -22,32 +22,22 @@ $font-sm: 20px;
   }
 }
 
-.heading {
+%heading {
   color: transparentize($color-primary, .3);
   font-size: $font-lg;
   background-color: darken($color-secondary, 10%);
   text-align: center;
 }
 
-@function fontSize($size: 12px) {
-  @return $size * 2;
-}
-
 h1 {
   // $color-secondary: red;  // !global = try to avoid this Day, pls!
-  @extend .heading;
+  @extend %heading;
 
   &:hover {
-    background-color: $color-primary;
-    color: $color-secondary
+    background-color: green;
   }
-}
-
-.banner p {
-  font-size: fontSize($font-sm)
 }
 
 .footer h3 {
   @extend h1;
-  font-size: fontSize();
 }
