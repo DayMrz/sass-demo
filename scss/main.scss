@@ -22,15 +22,27 @@ $font-sm: 20px;
   }
 }
 
-.banner h1 {
+@mixin headStyles($fontSize) {
+  font-size: $fontSize;
   color: $color-secondary;
-  font-size: $font-lg;
   text-align: center;
+}
+
+@mixin transition($param...){
+  transition: $param;
+}
+
+.banner h1 {
+  @include headStyles($font-lg);
   // $color-secondary: red;  // !global = try to avoid this Day, pls!
 }
 
 .footer h3 {
-  color: $color-secondary;
-  font-size: $font-md;
-  text-align: center;
+  @include headStyles($font-md);
+  @include transition(color .5s, background-color 1s);
+
+  &:hover {
+    color: $color-tertiary;
+    background-color: $color-primary;
+  }
 }

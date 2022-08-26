@@ -10,11 +10,15 @@
       color: gray; }
 
 .banner h1 {
-  color: gray;
   font-size: 40px;
+  color: gray;
   text-align: center; }
 
 .footer h3 {
-  color: gray;
   font-size: 30px;
-  text-align: center; }
+  color: gray;
+  text-align: center;
+  transition: color 0.5s, background-color 1s; }
+  .footer h3:hover {
+    color: royalblue;
+    background-color: orange; }
